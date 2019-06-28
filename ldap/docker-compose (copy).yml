@@ -6,11 +6,10 @@ services:
       - 389:389
       - 636:636
     hostname: ldap_service
-    container_name: ldap_service
     networks:
       default:
         ipv4_address: 10.11.1.2
-    tty: true
+    command: ["/bin/bash", "autoadduser.sh", ">","/dev/null"]
   phpldapadmin-service:
     image: osixia/phpldapadmin
     hostname: phpldapadmin-service
