@@ -1,4 +1,4 @@
-version: '3'
+version: '3.4'
 services:
   ldap_service:
     build: .
@@ -30,8 +30,10 @@ services:
   gitlab_service:
     image: 'gitlab/gitlab-ce:latest'
     restart: always
-    hostname: 'gitlab_service'
+    hostname: gitlab_service
     container_name: gitlab_service
+    depends_on:
+      - ldap_service
     environment:
       GITLAB_OMNIBUS_CONFIG: |
         gitlab_rails['ldap_enabled'] = true
@@ -48,6 +50,46 @@ services:
     networks:
       default:
          ipv4_address: 10.11.1.4
+  postgres:
+    image: postgres
+    container_name: postgres_db
+    restart: always
+    environment:
+      POSTGRES_USER: devops
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: teamcitydb
+    networks:
+      default:
+         ipv4_address: 10.11.1.6
+  teamcity_server:
+    image: jetbrains/teamcity-server
+    hostname: teamcity_server
+    container_name: teamcity_server
+    depends_on:
+      - ldap_service
+      - postgres
+    ports:
+      - "8111:8111"
+    volumes:
+      - ./teamcity/project:/data/teamcity_server/datadir
+      - ./teamcity/log:/opt/teamcity/logs
+    networks:
+      default:
+         ipv4_address: 10.11.1.5
+  teamcity_agent:
+    image: jetbrains/teamcity-agent
+    hostname: teamcity_agent
+    container_name: teamcity_agent
+    environment:
+      - SERVER_URL=http://10.11.1.5:8111
+      - AGENT_NAME=regular_agent
+    depends_on:
+      - teamcity_server
+    ports:
+      - "9090:9090"
+    networks:
+      default:
+         ipv4_address: 10.11.1.7
 networks:
  default:
         external:

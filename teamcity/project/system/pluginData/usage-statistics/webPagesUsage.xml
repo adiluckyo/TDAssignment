@@ -1,0 +1,23 @@
+<root>
+  <page path="/admin/createObjectMenu.html">
+    <usage userId="1" timestamp="1561801477899" />
+  </page>
+  <page path="/admin/createProject.html">
+    <usage userId="1" timestamp="1561800825806" />
+  </page>
+  <page path="/profile.html">
+    <usage userId="1" timestamp="1561801514911" />
+  </page>
+  <page path="/queue.html">
+    <usage userId="1" timestamp="1561800796062" />
+  </page>
+  <page path="/admin/admin.html">
+    <usage userId="1" timestamp="1561801488758" />
+  </page>
+  <page path="/admin/createObjectFromUrl.html">
+    <usage userId="1" timestamp="1561801482126" />
+  </page>
+  <page path="/">
+    <usage userId="1" timestamp="1561801518766" />
+  </page>
+</root>
