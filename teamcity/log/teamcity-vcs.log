@@ -1,0 +1,2 @@
+[2019-06-29 17:04:30,493]   INFO [ssing plugins 3] -      jetbrains.buildServer.VCS - Server-wide hg path is not set, will use path from the VCS root settings
+[2019-06-29 17:05:08,032]   INFO [ti node tasks 1] -      jetbrains.buildServer.VCS - Accepted the periodical checking for changes task

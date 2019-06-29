@@ -51,13 +51,13 @@ services:
       default:
          ipv4_address: 10.11.1.4
   postgres:
-    image: postgres
+    build:
+      context: ./postgres
+      dockerfile: Dockerfile_pg
     container_name: postgres_db
     restart: always
     environment:
-      POSTGRES_USER: devops
       POSTGRES_PASSWORD: 1234
-      POSTGRES_DB: teamcitydb
     networks:
       default:
          ipv4_address: 10.11.1.6
