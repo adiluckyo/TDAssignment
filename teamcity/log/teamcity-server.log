@@ -1,0 +1,126 @@
+[2019-06-28 12:46:33,160]   INFO -  jetbrains.buildServer.STARTUP - Path to the startup configuration file: /opt/teamcity/bin/../conf/teamcity-startup.properties
+[2019-06-28 12:46:33,273]   INFO -   jetbrains.buildServer.SERVER - Using logs directory "/opt/teamcity/logs"
+[2019-06-28 12:46:33,543]   INFO -  jetbrains.buildServer.STARTUP - 
+
+
+
+
+
+
+[2019-06-28 12:46:33,546]   INFO -  jetbrains.buildServer.STARTUP - ===========================================================
+[2019-06-28 12:46:33,546]   INFO -  jetbrains.buildServer.STARTUP - Starting TeamCity server
+[2019-06-28 12:46:34,841]   INFO -  jetbrains.buildServer.STARTUP - TeamCity version: 2019.1.1 (build 66192), data format version 898
+[2019-06-28 12:46:34,870]   INFO -  jetbrains.buildServer.STARTUP - OS: Linux, version 5.0.0-19-generic, amd64, Current user: root, Time zone: GMT (UTC)
+[2019-06-28 12:46:34,870]   INFO -  jetbrains.buildServer.STARTUP - Java: 1.8.0_192, OpenJDK 64-Bit Server VM (25.192-b12, mixed mode), OpenJDK Runtime Environment (1.8.0_192-b12), Oracle Corporation; JVM parameters: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Djava.util.logging.config.file=/opt/teamcity/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Xmx512m -Dteamcity.configuration.path=../conf/teamcity-startup.properties -Dlog4j.configuration=file:/opt/teamcity/bin/../conf/teamcity-server-log4j.xml -Dteamcity_logs=/opt/teamcity/bin/../logs -Djava.awt.headless=true -Dignore.endorsed.dirs= -Dcatalina.base=/opt/teamcity -Dcatalina.home=/opt/teamcity -Djava.io.tmpdir=/opt/teamcity/temp
+[2019-06-28 12:46:34,876]   INFO -  jetbrains.buildServer.STARTUP - Garbage collection: PS Scavenge, PS MarkSweep
+[2019-06-28 12:46:34,877]   INFO -  jetbrains.buildServer.STARTUP - Web server version: Apache Tomcat/8.5.40
+[2019-06-28 12:46:34,879]   INFO -  jetbrains.buildServer.STARTUP - Server IP address: 172.17.0.2
+[2019-06-28 12:46:34,899]   INFO -  jetbrains.buildServer.STARTUP - Web server ports: 8111 (protocol: HTTP/1.1, scheme: http), 8105 (shutdown port)
+[2019-06-28 12:46:34,900]   INFO -  jetbrains.buildServer.STARTUP - Context path: "/", servlet real path: "/opt/teamcity/webapps/ROOT"
+[2019-06-28 12:46:34,924]   INFO -  jetbrains.buildServer.STARTUP - TeamCity distribution type: docker-ubuntu
+[2019-06-28 12:46:34,924]   INFO -  jetbrains.buildServer.STARTUP - TeamCity server node id: MAIN_SERVER
+[2019-06-28 12:46:34,943]   INFO -  jetbrains.buildServer.STARTUP - Version file lock was successfully obtained: /opt/teamcity/webapps/ROOT/BUILD_66192
+[2019-06-28 12:46:34,983]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Looking for the TeamCity Data Directory
+[2019-06-28 12:46:34,985]   INFO -  jetbrains.buildServer.STARTUP - The TeamCity Data Directory path is determined using the environment variable TEAMCITY_DATA_PATH
+[2019-06-28 12:46:35,010]   INFO -  jetbrains.buildServer.STARTUP - The TeamCity Data Directory "/data/teamcity_server/datadir" exists
+[2019-06-28 12:46:35,017]   INFO -  jetbrains.buildServer.STARTUP - Asking user to confirm first start with the predefined TeamCity Data Directory path
+[2019-06-28 12:46:35,062]   INFO -  jetbrains.buildServer.STARTUP - Startup confirmation is required. Open TeamCity web page in the browser. Server is running at http://localhost:8111
+[2019-06-28 12:46:35,062]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Confirming TeamCity first start (administrator login is required to proceed)
+[2019-06-28 12:46:50,864]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Initializing the TeamCity Data Directory
+[2019-06-28 12:46:51,852]   INFO -  jetbrains.buildServer.STARTUP - Downloading JDBC driver metadata from <https://download.jetbrains.com/teamcity/database-drivers/2019.1.xml?myVersion=2019.1.1&javaVersion=1.8.0_192>...
+[2019-06-28 12:46:56,621]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Setting up database connection (administrator login is required to proceed)
+[2019-06-28 12:47:09,623]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Downloading JDBC drivers
+[2019-06-28 12:47:09,679]   INFO -  jetbrains.buildServer.STARTUP - Downloading postgresql JDBC driver...
+[2019-06-28 12:47:12,862]   INFO -  jetbrains.buildServer.STARTUP - Successfully downloaded postgresql JDBC driver.
+[2019-06-28 12:47:12,863]   INFO -  jetbrains.buildServer.STARTUP - JDBC loader: loading JDBC drivers (for the first time)
+[2019-06-28 12:47:12,877]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Setting up database connection (administrator login is required to proceed)
+[2019-06-28 12:47:23,561]   INFO -  jetbrains.buildServer.STARTUP - Generated JDBC connection string: jdbc:postgresql:///
+[2019-06-28 12:47:23,562]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Creating a new database
+[2019-06-28 12:47:23,562]   INFO -  jetbrains.buildServer.STARTUP - Creating a new database
+[2019-06-28 12:47:23,692]   INFO -  jetbrains.buildServer.STARTUP - Effective database connection properties:
+[2019-06-28 12:47:23,692]   INFO -  jetbrains.buildServer.STARTUP - 	ApplicationName=TeamCity [defaults]
+[2019-06-28 12:47:23,693]   INFO -  jetbrains.buildServer.STARTUP - 	autosave=conservative [defaults]
+[2019-06-28 12:47:24,231]  ERROR -  jetbrains.buildServer.STARTUP - Could not connect to PostgreSQL server.
+connection to :5432 refused. check that the hostname and port are correct and that the postmaster is accepting tcp/ip connections.: org.postgresql.util.PSQLException: Connection to :5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections. Caused by: java.net.ConnectException: Connection refused (Connection refused)
+[2019-06-28 12:47:24,232]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Setting up database connection (administrator login is required to proceed)
+[2019-06-28 12:58:14,884]   INFO -  jetbrains.buildServer.STARTUP - Generated JDBC connection string: jdbc:postgresql://10.11.1.5:5432/teamcity?user=postgres
+[2019-06-28 12:58:14,898]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Creating a new database
+[2019-06-28 12:58:14,901]   INFO -  jetbrains.buildServer.STARTUP - Creating a new database
+[2019-06-28 12:59:55,503]  ERROR -  jetbrains.buildServer.STARTUP - Could not connect to PostgreSQL server.
+the connection attempt failed.: org.postgresql.util.PSQLException: The connection attempt failed. Caused by: java.net.SocketTimeoutException: connect timed out
+[2019-06-28 12:59:55,507]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Setting up database connection (administrator login is required to proceed)
+[2019-06-28 13:01:24,493]   INFO -  jetbrains.buildServer.STARTUP - Generated JDBC connection string: jdbc:postgresql://localhost:5432/teamcity?user=postgres
+[2019-06-28 13:01:24,498]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Creating a new database
+[2019-06-28 13:01:24,499]   INFO -  jetbrains.buildServer.STARTUP - Creating a new database
+[2019-06-28 13:01:24,932]  ERROR -  jetbrains.buildServer.STARTUP - Could not connect to PostgreSQL server.
+connection to localhost:5432 refused. check that the hostname and port are correct and that the postmaster is accepting tcp/ip connections.: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections. Caused by: java.net.ConnectException: Connection refused (Connection refused)
+[2019-06-28 13:01:24,932]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Setting up database connection (administrator login is required to proceed)
+[2019-06-28 13:01:49,422]   INFO -  jetbrains.buildServer.STARTUP - Generated JDBC connection string: jdbc:postgresql://10.11.1.5:5432/teamcity?user=postgres
+[2019-06-28 13:01:49,429]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Creating a new database
+[2019-06-28 13:01:49,429]   INFO -  jetbrains.buildServer.STARTUP - Creating a new database
+[2019-06-28 13:03:29,983]  ERROR -  jetbrains.buildServer.STARTUP - Could not connect to PostgreSQL server.
+the connection attempt failed.: org.postgresql.util.PSQLException: The connection attempt failed. Caused by: java.net.SocketTimeoutException: connect timed out
+[2019-06-28 13:03:29,988]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Setting up database connection (administrator login is required to proceed)
+[2019-06-28 13:12:03,918]   INFO -  jetbrains.buildServer.STARTUP - Path to the startup configuration file: /opt/teamcity/bin/../conf/teamcity-startup.properties
+[2019-06-28 13:12:03,983]   INFO -   jetbrains.buildServer.SERVER - Using logs directory "/opt/teamcity/logs"
+[2019-06-28 13:12:04,051]   INFO -  jetbrains.buildServer.STARTUP - 
+
+
+
+
+
+
+[2019-06-28 13:12:04,051]   INFO -  jetbrains.buildServer.STARTUP - ===========================================================
+[2019-06-28 13:12:04,051]   INFO -  jetbrains.buildServer.STARTUP - Starting TeamCity server
+[2019-06-28 13:12:04,579]   INFO -  jetbrains.buildServer.STARTUP - TeamCity version: 2019.1.1 (build 66192), data format version 898
+[2019-06-28 13:12:04,586]   INFO -  jetbrains.buildServer.STARTUP - OS: Linux, version 5.0.0-19-generic, amd64, Current user: root, Time zone: GMT (UTC)
+[2019-06-28 13:12:04,586]   INFO -  jetbrains.buildServer.STARTUP - Java: 1.8.0_192, OpenJDK 64-Bit Server VM (25.192-b12, mixed mode), OpenJDK Runtime Environment (1.8.0_192-b12), Oracle Corporation; JVM parameters: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Djava.util.logging.config.file=/opt/teamcity/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Xmx512m -Dteamcity.configuration.path=../conf/teamcity-startup.properties -Dlog4j.configuration=file:/opt/teamcity/bin/../conf/teamcity-server-log4j.xml -Dteamcity_logs=/opt/teamcity/bin/../logs -Djava.awt.headless=true -Dignore.endorsed.dirs= -Dcatalina.base=/opt/teamcity -Dcatalina.home=/opt/teamcity -Djava.io.tmpdir=/opt/teamcity/temp
+[2019-06-28 13:12:04,587]   INFO -  jetbrains.buildServer.STARTUP - Garbage collection: PS Scavenge, PS MarkSweep
+[2019-06-28 13:12:04,588]   INFO -  jetbrains.buildServer.STARTUP - Web server version: Apache Tomcat/8.5.40
+[2019-06-28 13:12:04,589]   INFO -  jetbrains.buildServer.STARTUP - Server IP address: 172.17.0.2
+[2019-06-28 13:12:04,604]   INFO -  jetbrains.buildServer.STARTUP - Web server ports: 8111 (protocol: HTTP/1.1, scheme: http), 8105 (shutdown port)
+[2019-06-28 13:12:04,604]   INFO -  jetbrains.buildServer.STARTUP - Context path: "/", servlet real path: "/opt/teamcity/webapps/ROOT"
+[2019-06-28 13:12:04,617]   INFO -  jetbrains.buildServer.STARTUP - TeamCity distribution type: docker-ubuntu
+[2019-06-28 13:12:04,618]   INFO -  jetbrains.buildServer.STARTUP - TeamCity server node id: MAIN_SERVER
+[2019-06-28 13:12:04,629]   INFO -  jetbrains.buildServer.STARTUP - Version file lock was successfully obtained: /opt/teamcity/webapps/ROOT/BUILD_66192
+[2019-06-28 13:12:04,648]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Looking for the TeamCity Data Directory
+[2019-06-28 13:12:04,650]   INFO -  jetbrains.buildServer.STARTUP - The TeamCity Data Directory path is determined using the environment variable TEAMCITY_DATA_PATH
+[2019-06-28 13:12:04,656]   INFO -  jetbrains.buildServer.STARTUP - The TeamCity Data Directory "/data/teamcity_server/datadir" exists
+[2019-06-28 13:12:04,658]   INFO -  jetbrains.buildServer.STARTUP - Asking user to confirm first start with the predefined TeamCity Data Directory path
+[2019-06-28 13:12:04,674]   INFO -  jetbrains.buildServer.STARTUP - Startup confirmation is required. Open TeamCity web page in the browser. Server is running at http://localhost:8111
+[2019-06-28 13:12:04,674]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Confirming TeamCity first start (administrator login is required to proceed)
+[2019-06-28 13:18:23,443]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Initializing the TeamCity Data Directory
+[2019-06-28 13:18:24,511]   INFO -  jetbrains.buildServer.STARTUP - Downloading JDBC driver metadata from <https://download.jetbrains.com/teamcity/database-drivers/2019.1.xml?myVersion=2019.1.1&javaVersion=1.8.0_192>...
+[2019-06-28 13:18:27,830]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Setting up database connection (administrator login is required to proceed)
+[2019-06-28 13:18:46,199]   INFO -  jetbrains.buildServer.STARTUP - JDBC loader: loading JDBC drivers (for the first time)
+[2019-06-28 13:19:11,801]   INFO -  jetbrains.buildServer.STARTUP - Generated JDBC connection string: jdbc:postgresql://10.11.1.5/teamcitydb?user=devops&password=********
+[2019-06-28 13:19:11,801]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Creating a new database
+[2019-06-28 13:19:11,801]   INFO -  jetbrains.buildServer.STARTUP - Creating a new database
+[2019-06-28 13:19:11,861]   INFO -  jetbrains.buildServer.STARTUP - Effective database connection properties:
+[2019-06-28 13:19:11,861]   INFO -  jetbrains.buildServer.STARTUP - 	ApplicationName=TeamCity [defaults]
+[2019-06-28 13:19:11,861]   INFO -  jetbrains.buildServer.STARTUP - 	autosave=conservative [defaults]
+[2019-06-28 13:20:52,531]  ERROR -  jetbrains.buildServer.STARTUP - Could not connect to PostgreSQL server.
+the connection attempt failed.: org.postgresql.util.PSQLException: The connection attempt failed. Caused by: java.net.SocketTimeoutException: connect timed out
+[2019-06-28 13:20:52,532]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Setting up database connection (administrator login is required to proceed)
+[2019-06-28 13:21:52,750]   INFO -  jetbrains.buildServer.STARTUP - Generated JDBC connection string: jdbc:postgresql://10.11.1.5:5432/teamcitydb?user=devops&password=********
+[2019-06-28 13:21:52,750]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Creating a new database
+[2019-06-28 13:21:52,750]   INFO -  jetbrains.buildServer.STARTUP - Creating a new database
+[2019-06-28 13:23:33,248]  ERROR -  jetbrains.buildServer.STARTUP - Could not connect to PostgreSQL server.
+the connection attempt failed.: org.postgresql.util.PSQLException: The connection attempt failed. Caused by: java.net.SocketTimeoutException: connect timed out
+[2019-06-28 13:23:33,250]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Setting up database connection (administrator login is required to proceed)
+[2019-06-28 13:25:37,082]   INFO -  jetbrains.buildServer.STARTUP - Generated JDBC connection string: jdbc:postgresql://127.0.0.1:5432/teamcitydb?user=devops&password=********
+[2019-06-28 13:25:37,083]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Creating a new database
+[2019-06-28 13:25:37,083]   INFO -  jetbrains.buildServer.STARTUP - Creating a new database
+[2019-06-28 13:25:37,502]  ERROR -  jetbrains.buildServer.STARTUP - Could not connect to PostgreSQL server.
+connection to 127.0.0.1:5432 refused. check that the hostname and port are correct and that the postmaster is accepting tcp/ip connections.: org.postgresql.util.PSQLException: Connection to 127.0.0.1:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections. Caused by: java.net.ConnectException: Connection refused (Connection refused)
+[2019-06-28 13:25:37,502]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Setting up database connection (administrator login is required to proceed)
+[2019-06-28 13:25:59,971]   INFO -  jetbrains.buildServer.STARTUP - Generated JDBC connection string: jdbc:postgresql://127.0.0.1:5432/teamcitydb?user=devops&password=********
+[2019-06-28 13:25:59,971]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Creating a new database
+[2019-06-28 13:25:59,971]   INFO -  jetbrains.buildServer.STARTUP - Creating a new database
+[2019-06-28 13:26:00,378]  ERROR -  jetbrains.buildServer.STARTUP - Could not connect to PostgreSQL server.
+connection to 127.0.0.1:5432 refused. check that the hostname and port are correct and that the postmaster is accepting tcp/ip connections.: org.postgresql.util.PSQLException: Connection to 127.0.0.1:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections. Caused by: java.net.ConnectException: Connection refused (Connection refused)
+[2019-06-28 13:26:00,379]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Setting up database connection (administrator login is required to proceed)
+[2019-06-28 13:27:06,972]   INFO -  jetbrains.buildServer.STARTUP - Generated JDBC connection string: jdbc:postgresql://10.11.1.5:5432/teamcitydb?user=devops&password=********
+[2019-06-28 13:27:06,972]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Creating a new database
+[2019-06-28 13:27:06,972]   INFO -  jetbrains.buildServer.STARTUP - Creating a new database
+[2019-06-28 13:28:24,224]   INFO -  jetbrains.buildServer.STARTUP - Server shutdown event received

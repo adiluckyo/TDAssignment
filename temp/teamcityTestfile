@@ -1,0 +1,1 @@
+docker run -d --name teamcity-server1 -v $pwd/project:/data/teamcity_server/datadir -v $pwd/log:/opt/teamcity/logs -p 8111:8111 --network TDTest jetbrains/teamcity-server
