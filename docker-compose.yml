@@ -1,7 +1,7 @@
 version: '3.4'
 services:
  ldap_service:
-    build: .
+    image: adiluckyo/ldap-service-td
     ports:
       - 389:389
       - 636:636
@@ -11,7 +11,17 @@ services:
       Test:
         ipv4_address: 10.11.1.2
     tty: true
- phpldapadmin-service:
+ postgres:
+    image: adiluckyo/postgres-td
+    container_name: postgres_db
+    environment:
+      POSTGRES_PASSWORD: 1234
+    depends_on:
+      - ldap_service
+    networks:
+      Test:
+         ipv4_address: 10.11.1.6
+ phpldapadmin_service:
     image: osixia/phpldapadmin
     hostname: phpldapadmin_service
     container_name: phpldapadmin_service
@@ -22,17 +32,18 @@ services:
       - 8080:80
     depends_on:
       - ldap_service
+      - postgres
     links:
       - ldap_service:ldap-host
     networks:
       Test:
          ipv4_address: 10.11.1.3
  gitlab_service:
-    image: 'gitlab/gitlab-ce:latest'
+    image: adiluckyo/gitlab-td
     hostname: gitlab_service
     container_name: gitlab_service
     depends_on:
-      - ldap_service
+      - phpldapadmin_service
     environment:
       GITLAB_OMNIBUS_CONFIG: |
         gitlab_rails['ldap_enabled'] = true
@@ -49,23 +60,26 @@ services:
     networks:
       Test:
          ipv4_address: 10.11.1.4
- postgres:
-    build:
-      context: ./postgres
-      dockerfile: Dockerfile_pg
-    container_name: postgres_db
-    environment:
-      POSTGRES_PASSWORD: 1234
+ nexus:
+    image: adiluckyo/nexus-td
+    hostname: nexus
+    container_name: nexus
+    volumes:
+      - ./nexus/data:/sonatype-work sonatype/nexus
+
+    ports:
+      - "8081:8081"
+    depends_on:
+      - gitlab_service
     networks:
       Test:
-         ipv4_address: 10.11.1.6
+         ipv4_address: 10.11.1.10
  teamcity_server:
-    image: jetbrains/teamcity-server
+    image: adiluckyo/teamcity-td
     hostname: teamcity_server
     container_name: teamcity_server
     depends_on:
-      - ldap_service
-      - postgres
+      - nexus
     ports:
       - "8111:8111"
     volumes:
@@ -74,15 +88,6 @@ services:
     networks:
       Test:
          ipv4_address: 10.11.1.5
- nexus:
-    image: sonatype/nexus
-    hostname: nexus
-    container_name: nexus
-    ports:
-      - "8081:8081"
-    networks:
-      Test:
-         ipv4_address: 10.11.1.10
 networks:
    Test:
       ipam:

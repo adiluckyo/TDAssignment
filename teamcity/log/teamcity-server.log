@@ -2481,3 +2481,188 @@ connection to 10.11.1.6:5432 refused. check that the hostname and port are corre
 [2019-06-30 10:02:25,101]   INFO - Server.serverSide.TmpFilesImpl - Temp files were deleted in 1392ms
 [2019-06-30 10:02:25,101]   INFO -   jetbrains.buildServer.SERVER - Finishing pending agents long-polling requests
 [2019-06-30 10:02:25,102]   INFO - .index.BuildIndexer (metadata) - Background build indexer finished
+[2019-06-30 12:57:32,550]   INFO -  jetbrains.buildServer.STARTUP - Path to the startup configuration file: /opt/teamcity/bin/../conf/teamcity-startup.properties
+[2019-06-30 12:57:32,648]   INFO -   jetbrains.buildServer.SERVER - Using logs directory "/opt/teamcity/logs"
+[2019-06-30 12:57:32,698]   INFO -  jetbrains.buildServer.STARTUP - 
+
+
+
+
+
+
+[2019-06-30 12:57:32,699]   INFO -  jetbrains.buildServer.STARTUP - ===========================================================
+[2019-06-30 12:57:32,699]   INFO -  jetbrains.buildServer.STARTUP - Starting TeamCity server
+[2019-06-30 12:57:34,328]   INFO -  jetbrains.buildServer.STARTUP - TeamCity version: 2019.1.1 (build 66192), data format version 898
+[2019-06-30 12:57:34,333]   INFO -  jetbrains.buildServer.STARTUP - OS: Linux, version 4.18.0-25-generic, amd64, Current user: root, Time zone: GMT (UTC)
+[2019-06-30 12:57:34,333]   INFO -  jetbrains.buildServer.STARTUP - Java: 1.8.0_192, OpenJDK 64-Bit Server VM (25.192-b12, mixed mode), OpenJDK Runtime Environment (1.8.0_192-b12), Oracle Corporation; JVM parameters: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Djava.util.logging.config.file=/opt/teamcity/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Xmx512m -Dteamcity.configuration.path=../conf/teamcity-startup.properties -Dlog4j.configuration=file:/opt/teamcity/bin/../conf/teamcity-server-log4j.xml -Dteamcity_logs=/opt/teamcity/bin/../logs -Djava.awt.headless=true -Dignore.endorsed.dirs= -Dcatalina.base=/opt/teamcity -Dcatalina.home=/opt/teamcity -Djava.io.tmpdir=/opt/teamcity/temp
+[2019-06-30 12:57:34,334]   INFO -  jetbrains.buildServer.STARTUP - Garbage collection: PS Scavenge, PS MarkSweep
+[2019-06-30 12:57:34,394]   INFO -  jetbrains.buildServer.STARTUP - Web server version: Apache Tomcat/8.5.40
+[2019-06-30 12:57:34,395]   INFO -  jetbrains.buildServer.STARTUP - Server IP address: 10.11.1.5
+[2019-06-30 12:57:34,398]   INFO -  jetbrains.buildServer.STARTUP - Web server ports: 8111 (protocol: HTTP/1.1, scheme: http), 8105 (shutdown port)
+[2019-06-30 12:57:34,398]   INFO -  jetbrains.buildServer.STARTUP - Context path: "/", servlet real path: "/opt/teamcity/webapps/ROOT"
+[2019-06-30 12:57:34,408]   INFO -  jetbrains.buildServer.STARTUP - TeamCity distribution type: docker-ubuntu
+[2019-06-30 12:57:34,408]   INFO -  jetbrains.buildServer.STARTUP - TeamCity server node id: MAIN_SERVER
+[2019-06-30 12:57:34,412]   INFO -  jetbrains.buildServer.STARTUP - Version file lock was successfully obtained: /opt/teamcity/webapps/ROOT/BUILD_66192
+[2019-06-30 12:57:34,430]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Looking for the TeamCity Data Directory
+[2019-06-30 12:57:34,430]   INFO -  jetbrains.buildServer.STARTUP - The TeamCity Data Directory path is determined using the environment variable TEAMCITY_DATA_PATH
+[2019-06-30 12:57:34,502]   INFO -  jetbrains.buildServer.STARTUP - The TeamCity Data Directory "/data/teamcity_server/datadir" exists
+[2019-06-30 12:57:34,543]   INFO -  jetbrains.buildServer.STARTUP - The main configuration file "/data/teamcity_server/datadir/config/main-config.xml" exists
+[2019-06-30 12:57:34,543]   INFO -  jetbrains.buildServer.STARTUP - The database properties file "/data/teamcity_server/datadir/config/database.properties" exists
+[2019-06-30 12:57:34,543]   INFO -  jetbrains.buildServer.STARTUP - The internal database data file "/data/teamcity_server/datadir/system/buildserver.data" doesn't exist
+[2019-06-30 12:57:34,550]   INFO -  jetbrains.buildServer.STARTUP - Data Directory version: 898
+[2019-06-30 12:57:34,570]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Looking for the database configuration
+[2019-06-30 12:57:34,571]   INFO -  jetbrains.buildServer.STARTUP - Database properties file "/data/teamcity_server/datadir/config/database.properties" exists
+[2019-06-30 12:57:34,571]   INFO -  jetbrains.buildServer.STARTUP - Internal HSQL database file (/data/teamcity_server/datadir/system/buildserver.data) doesn't exist
+[2019-06-30 12:57:34,571]   INFO -  jetbrains.buildServer.STARTUP - Database connection URL: jdbc:postgresql://10.11.1.6/teamcitydb
+[2019-06-30 12:57:34,572]   INFO -  jetbrains.buildServer.STARTUP - Using database connection URL from the database properties file. The URL is: jdbc:postgresql://10.11.1.6/teamcitydb
+[2019-06-30 12:57:34,574]   INFO -  jetbrains.buildServer.STARTUP - Using external (POSTGRESQL) database
+[2019-06-30 12:57:34,575]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Connecting to the database
+[2019-06-30 12:57:34,587]   INFO -  jetbrains.buildServer.STARTUP - JDBC loader: loading JDBC drivers (for the first time)
+[2019-06-30 12:57:34,928]   INFO -  jetbrains.buildServer.STARTUP - Effective database connection properties:
+[2019-06-30 12:57:34,929]   INFO -  jetbrains.buildServer.STARTUP - 	ApplicationName=TeamCity [defaults]
+[2019-06-30 12:57:34,929]   INFO -  jetbrains.buildServer.STARTUP - 	autosave=conservative [defaults]
+[2019-06-30 12:57:35,303]   INFO -  jetbrains.buildServer.STARTUP - Database character set: UTF8
+[2019-06-30 12:57:35,303]   INFO -  jetbrains.buildServer.STARTUP - Database collation: en_US.utf8
+[2019-06-30 12:57:35,410]   INFO -  jetbrains.buildServer.STARTUP - JDBC driver version: 42.2 (PostgreSQL JDBC Driver)
+[2019-06-30 12:57:35,410]   INFO -  jetbrains.buildServer.STARTUP - Database system version: 11.4 (PostgreSQL)
+[2019-06-30 12:57:35,410]   INFO -  jetbrains.buildServer.STARTUP - Connected to the database successfully
+[2019-06-30 12:57:35,410]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Checking the database
+[2019-06-30 12:57:43,015]   INFO -  jetbrains.buildServer.STARTUP - Using schema: public
+[2019-06-30 12:57:43,027]   INFO -  jetbrains.buildServer.STARTUP - Schema contains no tables.
+[2019-06-30 12:57:43,037]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Database is empty or doesn't exist (administrator login is required to proceed)
+[2019-06-30 12:57:43,037]   INFO -  jetbrains.buildServer.STARTUP - Administrator can login from web UI using super user authentication token
+[2019-06-30 12:57:43,038]   INFO -   jetbrains.buildServer.SERVER - Super user authentication token: 2204836471905839621 (use empty username with the token as the password to access the server)
+[2019-06-30 13:02:26,873]   INFO -  jetbrains.buildServer.STARTUP - Server shutdown event received
+[2019-06-30 13:02:26,873]   INFO -  jetbrains.buildServer.STARTUP - Current stage: TeamCity server is shutting down
+[2019-06-30 13:02:26,873]   INFO -  jetbrains.buildServer.STARTUP - Stopping the main application
+[2019-06-30 13:02:26,873]   INFO -  jetbrains.buildServer.STARTUP - The main servlet is not initialized, nothing to shut down.
+[2019-06-30 13:02:26,880]   INFO -  jetbrains.buildServer.STARTUP - Version file lock was released: /opt/teamcity/webapps/ROOT/BUILD_66192
+[2019-06-30 13:02:26,881]   INFO -  jetbrains.buildServer.STARTUP - Server shutdown complete. Uptime was 4m:52s
+[2019-06-30 13:06:35,884]   INFO -  jetbrains.buildServer.STARTUP - Path to the startup configuration file: /opt/teamcity/bin/../conf/teamcity-startup.properties
+[2019-06-30 13:06:35,903]   INFO -   jetbrains.buildServer.SERVER - Using logs directory "/opt/teamcity/logs"
+[2019-06-30 13:06:35,945]   INFO -  jetbrains.buildServer.STARTUP - 
+
+
+
+
+
+
+[2019-06-30 13:06:35,946]   INFO -  jetbrains.buildServer.STARTUP - ===========================================================
+[2019-06-30 13:06:35,946]   INFO -  jetbrains.buildServer.STARTUP - Starting TeamCity server
+[2019-06-30 13:06:36,223]   INFO -  jetbrains.buildServer.STARTUP - TeamCity version: 2019.1.1 (build 66192), data format version 898
+[2019-06-30 13:06:36,226]   INFO -  jetbrains.buildServer.STARTUP - OS: Linux, version 4.18.0-25-generic, amd64, Current user: root, Time zone: GMT (UTC)
+[2019-06-30 13:06:36,226]   INFO -  jetbrains.buildServer.STARTUP - Java: 1.8.0_192, OpenJDK 64-Bit Server VM (25.192-b12, mixed mode), OpenJDK Runtime Environment (1.8.0_192-b12), Oracle Corporation; JVM parameters: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Djava.util.logging.config.file=/opt/teamcity/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Xmx512m -Dteamcity.configuration.path=../conf/teamcity-startup.properties -Dlog4j.configuration=file:/opt/teamcity/bin/../conf/teamcity-server-log4j.xml -Dteamcity_logs=/opt/teamcity/bin/../logs -Djava.awt.headless=true -Dignore.endorsed.dirs= -Dcatalina.base=/opt/teamcity -Dcatalina.home=/opt/teamcity -Djava.io.tmpdir=/opt/teamcity/temp
+[2019-06-30 13:06:36,227]   INFO -  jetbrains.buildServer.STARTUP - Garbage collection: PS Scavenge, PS MarkSweep
+[2019-06-30 13:06:36,227]   INFO -  jetbrains.buildServer.STARTUP - Web server version: Apache Tomcat/8.5.40
+[2019-06-30 13:06:36,227]   INFO -  jetbrains.buildServer.STARTUP - Server IP address: 10.11.1.5
+[2019-06-30 13:06:36,229]   INFO -  jetbrains.buildServer.STARTUP - Web server ports: 8111 (protocol: HTTP/1.1, scheme: http), 8105 (shutdown port)
+[2019-06-30 13:06:36,229]   INFO -  jetbrains.buildServer.STARTUP - Context path: "/", servlet real path: "/opt/teamcity/webapps/ROOT"
+[2019-06-30 13:06:36,236]   INFO -  jetbrains.buildServer.STARTUP - TeamCity distribution type: docker-ubuntu
+[2019-06-30 13:06:36,236]   INFO -  jetbrains.buildServer.STARTUP - TeamCity server node id: MAIN_SERVER
+[2019-06-30 13:06:36,240]   INFO -  jetbrains.buildServer.STARTUP - Version file lock was successfully obtained: /opt/teamcity/webapps/ROOT/BUILD_66192
+[2019-06-30 13:06:36,252]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Looking for the TeamCity Data Directory
+[2019-06-30 13:06:36,575]   INFO -  jetbrains.buildServer.STARTUP - The TeamCity Data Directory path is determined using the environment variable TEAMCITY_DATA_PATH
+[2019-06-30 13:06:36,581]   INFO -  jetbrains.buildServer.STARTUP - The TeamCity Data Directory "/data/teamcity_server/datadir" exists
+[2019-06-30 13:06:36,582]   INFO -  jetbrains.buildServer.STARTUP - The main configuration file "/data/teamcity_server/datadir/config/main-config.xml" exists
+[2019-06-30 13:06:36,582]   INFO -  jetbrains.buildServer.STARTUP - The database properties file "/data/teamcity_server/datadir/config/database.properties" exists
+[2019-06-30 13:06:36,582]   INFO -  jetbrains.buildServer.STARTUP - The internal database data file "/data/teamcity_server/datadir/system/buildserver.data" doesn't exist
+[2019-06-30 13:06:36,587]   INFO -  jetbrains.buildServer.STARTUP - Data Directory version: 898
+[2019-06-30 13:06:36,587]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Looking for the database configuration
+[2019-06-30 13:06:36,588]   INFO -  jetbrains.buildServer.STARTUP - Database properties file "/data/teamcity_server/datadir/config/database.properties" exists
+[2019-06-30 13:06:36,588]   INFO -  jetbrains.buildServer.STARTUP - Internal HSQL database file (/data/teamcity_server/datadir/system/buildserver.data) doesn't exist
+[2019-06-30 13:06:36,588]   INFO -  jetbrains.buildServer.STARTUP - Database connection URL: jdbc:postgresql://10.11.1.6/teamcitydb
+[2019-06-30 13:06:36,588]   INFO -  jetbrains.buildServer.STARTUP - Using database connection URL from the database properties file. The URL is: jdbc:postgresql://10.11.1.6/teamcitydb
+[2019-06-30 13:06:36,589]   INFO -  jetbrains.buildServer.STARTUP - Using external (POSTGRESQL) database
+[2019-06-30 13:06:36,589]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Connecting to the database
+[2019-06-30 13:06:36,590]   INFO -  jetbrains.buildServer.STARTUP - JDBC loader: loading JDBC drivers (for the first time)
+[2019-06-30 13:06:36,630]   INFO -  jetbrains.buildServer.STARTUP - Effective database connection properties:
+[2019-06-30 13:06:36,630]   INFO -  jetbrains.buildServer.STARTUP - 	ApplicationName=TeamCity [defaults]
+[2019-06-30 13:06:36,630]   INFO -  jetbrains.buildServer.STARTUP - 	autosave=conservative [defaults]
+[2019-06-30 13:06:37,069]   WARN -  jetbrains.buildServer.STARTUP - Database connection error: jetbrains.buildServer.serverSide.db.DatabaseIsNotReachableException: Could not connect to PostgreSQL server.
+connection to 10.11.1.6:5432 refused. check that the hostname and port are correct and that the postmaster is accepting tcp/ip connections.: org.postgresql.util.PSQLException: Connection to 10.11.1.6:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections. Caused by: java.net.ConnectException: Connection refused (Connection refused) (enable debug to see stacktrace)
+[2019-06-30 13:06:37,070]   INFO -  jetbrains.buildServer.STARTUP - Could not reach the database, it may be the database server is not started yet or connection properties are not valid.
+[2019-06-30 13:06:37,070]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Continuing attempts to connect to the database
+[2019-06-30 13:06:37,070]   INFO -  jetbrains.buildServer.STARTUP - Administrator can login from web UI using super user authentication token
+[2019-06-30 13:06:37,070]   INFO -   jetbrains.buildServer.SERVER - Super user authentication token: 5969029426365155833 (use empty username with the token as the password to access the server)
+[2019-06-30 13:06:57,586]   INFO -  jetbrains.buildServer.STARTUP - Database character set: UTF8
+[2019-06-30 13:06:57,586]   INFO -  jetbrains.buildServer.STARTUP - Database collation: en_US.utf8
+[2019-06-30 13:06:57,669]   INFO -  jetbrains.buildServer.STARTUP - JDBC driver version: 42.2 (PostgreSQL JDBC Driver)
+[2019-06-30 13:06:57,669]   INFO -  jetbrains.buildServer.STARTUP - Database system version: 11.4 (PostgreSQL)
+[2019-06-30 13:06:57,669]   INFO -  jetbrains.buildServer.STARTUP - Connected to the database successfully
+[2019-06-30 13:06:57,669]   INFO -  jetbrains.buildServer.STARTUP - Connected successfully (from the 3 attempt)
+[2019-06-30 13:06:57,670]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Checking the database
+[2019-06-30 13:06:58,372]   INFO -  jetbrains.buildServer.STARTUP - Using schema: public
+[2019-06-30 13:06:58,384]   INFO -  jetbrains.buildServer.STARTUP - Schema contains no tables.
+[2019-06-30 13:06:58,393]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Database is empty or doesn't exist (administrator login is required to proceed)
+[2019-06-30 13:06:58,394]   INFO -  jetbrains.buildServer.STARTUP - Administrator can login from web UI using super user authentication token
+[2019-06-30 13:06:58,394]   INFO -   jetbrains.buildServer.SERVER - Super user authentication token: 5969029426365155833 (use empty username with the token as the password to access the server)
+[2019-06-30 13:15:59,715]   INFO -  jetbrains.buildServer.STARTUP - Server shutdown event received
+[2019-06-30 13:15:59,715]   INFO -  jetbrains.buildServer.STARTUP - Current stage: TeamCity server is shutting down
+[2019-06-30 13:15:59,715]   INFO -  jetbrains.buildServer.STARTUP - Stopping the main application
+[2019-06-30 13:15:59,716]   INFO -  jetbrains.buildServer.STARTUP - The main servlet is not initialized, nothing to shut down.
+[2019-06-30 13:15:59,723]   INFO -  jetbrains.buildServer.STARTUP - Version file lock was released: /opt/teamcity/webapps/ROOT/BUILD_66192
+[2019-06-30 13:15:59,723]   INFO -  jetbrains.buildServer.STARTUP - Server shutdown complete. Uptime was 9m:23s
+[2019-06-30 13:18:33,637]   INFO -  jetbrains.buildServer.STARTUP - Path to the startup configuration file: /opt/teamcity/bin/../conf/teamcity-startup.properties
+[2019-06-30 13:18:33,661]   INFO -   jetbrains.buildServer.SERVER - Using logs directory "/opt/teamcity/logs"
+[2019-06-30 13:18:33,693]   INFO -  jetbrains.buildServer.STARTUP - 
+
+
+
+
+
+
+[2019-06-30 13:18:33,694]   INFO -  jetbrains.buildServer.STARTUP - ===========================================================
+[2019-06-30 13:18:33,694]   INFO -  jetbrains.buildServer.STARTUP - Starting TeamCity server
+[2019-06-30 13:18:34,028]   INFO -  jetbrains.buildServer.STARTUP - TeamCity version: 2019.1.1 (build 66192), data format version 898
+[2019-06-30 13:18:34,033]   INFO -  jetbrains.buildServer.STARTUP - OS: Linux, version 4.18.0-25-generic, amd64, Current user: root, Time zone: GMT (UTC)
+[2019-06-30 13:18:34,033]   INFO -  jetbrains.buildServer.STARTUP - Java: 1.8.0_192, OpenJDK 64-Bit Server VM (25.192-b12, mixed mode), OpenJDK Runtime Environment (1.8.0_192-b12), Oracle Corporation; JVM parameters: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Djava.util.logging.config.file=/opt/teamcity/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Xmx512m -Dteamcity.configuration.path=../conf/teamcity-startup.properties -Dlog4j.configuration=file:/opt/teamcity/bin/../conf/teamcity-server-log4j.xml -Dteamcity_logs=/opt/teamcity/bin/../logs -Djava.awt.headless=true -Dignore.endorsed.dirs= -Dcatalina.base=/opt/teamcity -Dcatalina.home=/opt/teamcity -Djava.io.tmpdir=/opt/teamcity/temp
+[2019-06-30 13:18:34,033]   INFO -  jetbrains.buildServer.STARTUP - Garbage collection: PS Scavenge, PS MarkSweep
+[2019-06-30 13:18:34,034]   INFO -  jetbrains.buildServer.STARTUP - Web server version: Apache Tomcat/8.5.40
+[2019-06-30 13:18:34,034]   INFO -  jetbrains.buildServer.STARTUP - Server IP address: 10.11.1.5
+[2019-06-30 13:18:34,036]   INFO -  jetbrains.buildServer.STARTUP - Web server ports: 8111 (protocol: HTTP/1.1, scheme: http), 8105 (shutdown port)
+[2019-06-30 13:18:34,036]   INFO -  jetbrains.buildServer.STARTUP - Context path: "/", servlet real path: "/opt/teamcity/webapps/ROOT"
+[2019-06-30 13:18:34,043]   INFO -  jetbrains.buildServer.STARTUP - TeamCity distribution type: docker-ubuntu
+[2019-06-30 13:18:34,043]   INFO -  jetbrains.buildServer.STARTUP - TeamCity server node id: MAIN_SERVER
+[2019-06-30 13:18:34,046]   INFO -  jetbrains.buildServer.STARTUP - Version file lock was successfully obtained: /opt/teamcity/webapps/ROOT/BUILD_66192
+[2019-06-30 13:18:34,053]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Looking for the TeamCity Data Directory
+[2019-06-30 13:18:34,053]   INFO -  jetbrains.buildServer.STARTUP - The TeamCity Data Directory path is determined using the environment variable TEAMCITY_DATA_PATH
+[2019-06-30 13:18:34,058]   INFO -  jetbrains.buildServer.STARTUP - The TeamCity Data Directory "/data/teamcity_server/datadir" exists
+[2019-06-30 13:18:34,060]   INFO -  jetbrains.buildServer.STARTUP - The main configuration file "/data/teamcity_server/datadir/config/main-config.xml" exists
+[2019-06-30 13:18:34,060]   INFO -  jetbrains.buildServer.STARTUP - The database properties file "/data/teamcity_server/datadir/config/database.properties" exists
+[2019-06-30 13:18:34,060]   INFO -  jetbrains.buildServer.STARTUP - The internal database data file "/data/teamcity_server/datadir/system/buildserver.data" doesn't exist
+[2019-06-30 13:18:34,063]   INFO -  jetbrains.buildServer.STARTUP - Data Directory version: 898
+[2019-06-30 13:18:34,063]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Looking for the database configuration
+[2019-06-30 13:18:34,064]   INFO -  jetbrains.buildServer.STARTUP - Database properties file "/data/teamcity_server/datadir/config/database.properties" exists
+[2019-06-30 13:18:34,064]   INFO -  jetbrains.buildServer.STARTUP - Internal HSQL database file (/data/teamcity_server/datadir/system/buildserver.data) doesn't exist
+[2019-06-30 13:18:34,064]   INFO -  jetbrains.buildServer.STARTUP - Database connection URL: jdbc:postgresql://10.11.1.6/teamcitydb
+[2019-06-30 13:18:34,064]   INFO -  jetbrains.buildServer.STARTUP - Using database connection URL from the database properties file. The URL is: jdbc:postgresql://10.11.1.6/teamcitydb
+[2019-06-30 13:18:34,065]   INFO -  jetbrains.buildServer.STARTUP - Using external (POSTGRESQL) database
+[2019-06-30 13:18:34,065]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Connecting to the database
+[2019-06-30 13:18:34,066]   INFO -  jetbrains.buildServer.STARTUP - JDBC loader: loading JDBC drivers (for the first time)
+[2019-06-30 13:18:34,107]   INFO -  jetbrains.buildServer.STARTUP - Effective database connection properties:
+[2019-06-30 13:18:34,108]   INFO -  jetbrains.buildServer.STARTUP - 	ApplicationName=TeamCity [defaults]
+[2019-06-30 13:18:34,108]   INFO -  jetbrains.buildServer.STARTUP - 	autosave=conservative [defaults]
+[2019-06-30 13:18:34,541]   WARN -  jetbrains.buildServer.STARTUP - Database connection error: jetbrains.buildServer.serverSide.db.DatabaseIsNotReachableException: Could not connect to PostgreSQL server.
+connection to 10.11.1.6:5432 refused. check that the hostname and port are correct and that the postmaster is accepting tcp/ip connections.: org.postgresql.util.PSQLException: Connection to 10.11.1.6:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections. Caused by: java.net.ConnectException: Connection refused (Connection refused) (enable debug to see stacktrace)
+[2019-06-30 13:18:34,541]   INFO -  jetbrains.buildServer.STARTUP - Could not reach the database, it may be the database server is not started yet or connection properties are not valid.
+[2019-06-30 13:18:34,541]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Continuing attempts to connect to the database
+[2019-06-30 13:18:34,541]   INFO -  jetbrains.buildServer.STARTUP - Administrator can login from web UI using super user authentication token
+[2019-06-30 13:18:34,541]   INFO -   jetbrains.buildServer.SERVER - Super user authentication token: 8203115283457161113 (use empty username with the token as the password to access the server)
+[2019-06-30 13:18:55,038]   INFO -  jetbrains.buildServer.STARTUP - Database character set: UTF8
+[2019-06-30 13:18:55,038]   INFO -  jetbrains.buildServer.STARTUP - Database collation: en_US.utf8
+[2019-06-30 13:18:55,099]   INFO -  jetbrains.buildServer.STARTUP - JDBC driver version: 42.2 (PostgreSQL JDBC Driver)
+[2019-06-30 13:18:55,099]   INFO -  jetbrains.buildServer.STARTUP - Database system version: 11.4 (PostgreSQL)
+[2019-06-30 13:18:55,099]   INFO -  jetbrains.buildServer.STARTUP - Connected to the database successfully
+[2019-06-30 13:18:55,099]   INFO -  jetbrains.buildServer.STARTUP - Connected successfully (from the 3 attempt)
+[2019-06-30 13:18:55,099]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Checking the database
+[2019-06-30 13:19:08,718]   INFO -  jetbrains.buildServer.STARTUP - Using schema: public
+[2019-06-30 13:19:08,724]   INFO -  jetbrains.buildServer.STARTUP - Schema contains no tables.
+[2019-06-30 13:19:08,730]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Database is empty or doesn't exist (administrator login is required to proceed)
+[2019-06-30 13:19:08,730]   INFO -  jetbrains.buildServer.STARTUP - Administrator can login from web UI using super user authentication token
+[2019-06-30 13:19:08,731]   INFO -   jetbrains.buildServer.SERVER - Super user authentication token: 8203115283457161113 (use empty username with the token as the password to access the server)
+[2019-06-30 13:43:00,251]   INFO -  jetbrains.buildServer.STARTUP - Server shutdown event received
+[2019-06-30 13:43:00,251]   INFO -  jetbrains.buildServer.STARTUP - Current stage: TeamCity server is shutting down
+[2019-06-30 13:43:00,252]   INFO -  jetbrains.buildServer.STARTUP - Stopping the main application
+[2019-06-30 13:43:00,252]   INFO -  jetbrains.buildServer.STARTUP - The main servlet is not initialized, nothing to shut down.
+[2019-06-30 13:43:00,276]   INFO -  jetbrains.buildServer.STARTUP - Version file lock was released: /opt/teamcity/webapps/ROOT/BUILD_66192
+[2019-06-30 13:43:00,279]   INFO -  jetbrains.buildServer.STARTUP - Server shutdown complete. Uptime was 24m:26s
