@@ -36,3 +36,4 @@
 [2019-06-30 08:27:50,078]   INFO - tbrains.buildServer.ACTIVITIES - Spring components are shut down
 [2019-06-30 08:58:20,516]   INFO - tbrains.buildServer.ACTIVITIES - Server Started
 [2019-06-30 08:59:03,385]   INFO - tbrains.buildServer.ACTIVITIES - New user created: 'devops' {id=1}
+[2019-06-30 10:02:23,410]   INFO - tbrains.buildServer.ACTIVITIES - Shutdown Spring components

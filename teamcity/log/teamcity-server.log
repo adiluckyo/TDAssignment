@@ -2463,3 +2463,21 @@ connection to 10.11.1.6:5432 refused. check that the hostname and port are corre
 [2019-06-30 08:59:24,350]   INFO - r.configs.dsl.DslPluginManager - Plugins dsl compiled in 1m:13s,516ms
 [2019-06-30 08:59:36,835]   INFO -   jetbrains.buildServer.SERVER - JSP pre-compilation finished, pre-compiled 826 files in 1m:54s,641ms
 [2019-06-30 09:00:29,674]   INFO - r.configs.dsl.DslPluginManager - DSL documentation (http://localhost:8111/app/dsl-documentation/index.html) generated in 65285ms
+[2019-06-30 10:02:23,283]   INFO -  jetbrains.buildServer.STARTUP - Server shutdown event received
+[2019-06-30 10:02:23,283]   INFO -  jetbrains.buildServer.STARTUP - Current stage: TeamCity server is shutting down
+[2019-06-30 10:02:23,283]   INFO -  jetbrains.buildServer.STARTUP - Stopping the main application
+[2019-06-30 10:02:23,384]   INFO -  jetbrains.buildServer.STARTUP - Destroying the main servlet
+[2019-06-30 10:02:23,407]   INFO - MainTeamCityApplicationContext - Closing WebApplicationContext for namespace 'buildServer-servlet': startup date [Sun Jun 30 08:57:22 GMT 2019]; parent: TeamCity Root WebApplicationContext
+[2019-06-30 10:02:23,410]   INFO - tbrains.buildServer.ACTIVITIES - Shutdown Spring components
+[2019-06-30 10:02:23,413]   INFO -   jetbrains.buildServer.SERVER - Start shutdown of the thread "Ping 1"
+[2019-06-30 10:02:23,413]   INFO -   jetbrains.buildServer.SERVER - Start shutdown of the thread "Flush Queue 1"
+[2019-06-30 10:02:23,414]   INFO -   jetbrains.buildServer.SERVER - Start shutdown of the thread "Build Triggers Monitor 1"
+[2019-06-30 10:02:23,414]   INFO -   jetbrains.buildServer.SERVER - Start shutdown of the thread "Build Triggers Monitor 1"
+[2019-06-30 10:02:23,422]   INFO -   jetbrains.buildServer.SERVER - Saving projects credentials on disk ...
+[2019-06-30 10:02:23,422]   INFO -   jetbrains.buildServer.SERVER - Saving projects credentials on disk finished
+[2019-06-30 10:02:23,422]   INFO - ojects.BackgroundPersisterImpl - Shutdown background persister
+[2019-06-30 10:02:23,578]   INFO - ojects.BackgroundPersisterImpl - Background persister shutdown complete
+[2019-06-30 10:02:23,710]   INFO - Server.serverSide.TmpFilesImpl - Delete temp files on server shutdown
+[2019-06-30 10:02:25,101]   INFO - Server.serverSide.TmpFilesImpl - Temp files were deleted in 1392ms
+[2019-06-30 10:02:25,101]   INFO -   jetbrains.buildServer.SERVER - Finishing pending agents long-polling requests
+[2019-06-30 10:02:25,102]   INFO - .index.BuildIndexer (metadata) - Background build indexer finished

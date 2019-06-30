@@ -1,0 +1,89 @@
+version: '3.4'
+services:
+ ldap_service:
+    image: adiluckyo/ldap-service-td
+    ports:
+      - 389:389
+      - 636:636
+    hostname: ldap_service
+    container_name: ldap_service
+    networks:
+      Test:
+        ipv4_address: 10.11.1.2
+    tty: true
+ phpldapadmin-service:
+    image: osixia/phpldapadmin
+    hostname: phpldapadmin_service
+    container_name: phpldapadmin_service
+    environment:
+      PHPLDAPADMIN_LDAP_HOSTS: ldap-host
+      PHPLDAPADMIN_HTTPS: 'false'
+    ports:
+      - 8080:80
+    depends_on:
+      - ldap_service
+    links:
+      - ldap_service:ldap-host
+    networks:
+      Test:
+         ipv4_address: 10.11.1.3
+ gitlab_service:
+    image: adiluckyo/gitlab-td
+    hostname: gitlab_service
+    container_name: gitlab_service
+    depends_on:
+      - ldap_service
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        gitlab_rails['ldap_enabled'] = true
+        gitlab_rails['ldap_host'] = '10.11.1.2'
+        gitlab_rails['ldap_port'] = 389
+        gitlab_rails['ldap_uid'] = 'uid'
+        gitlab_rails['ldap_method'] = 'plain'
+        gitlab_rails['ldap_bind_dn'] = 'cn=admin,dc=example,dc=org'
+        gitlab_rails['ldap_password'] = 'admin'
+        gitlab_rails['ldap_allow_username_or_email_login'] = true
+        gitlab_rails['ldap_base'] = 'dc=example,dc=org' 
+    ports:
+      - '8180:80'
+    networks:
+      Test:
+         ipv4_address: 10.11.1.4
+ postgres:
+    image: adiluckyo/postgres-td
+    container_name: postgres_db
+    environment:
+      POSTGRES_PASSWORD: 1234
+    networks:
+      Test:
+         ipv4_address: 10.11.1.6
+ teamcity_server:
+    image: adiluckyo/teamcity-td
+    hostname: teamcity_server
+    container_name: teamcity_server
+    depends_on:
+      - ldap_service
+      - postgres
+    ports:
+      - "8111:8111"
+    volumes:
+      - ./teamcity/project:/data/teamcity_server/datadir
+      - ./teamcity/log:/opt/teamcity/logs
+    networks:
+      Test:
+         ipv4_address: 10.11.1.5
+ nexus:
+    image: adiluckyo/nexus-td
+    hostname: nexus
+    container_name: nexus
+    ports:
+      - "8081:8081"
+    networks:
+      Test:
+         ipv4_address: 10.11.1.10
+networks:
+   Test:
+      ipam:
+       driver: default
+       config:
+        - subnet: 10.11.1.0/24

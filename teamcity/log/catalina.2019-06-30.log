@@ -644,3 +644,6 @@
 30-Jun-2019 08:53:39.169 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/opt/teamcity/webapps/ROOT] has finished in [2,923] ms
 30-Jun-2019 08:53:39.171 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8111"]
 30-Jun-2019 08:53:39.177 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 2953 ms
+30-Jun-2019 10:02:23.113 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+30-Jun-2019 10:02:23.116 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8111"]
+30-Jun-2019 10:02:23.124 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
