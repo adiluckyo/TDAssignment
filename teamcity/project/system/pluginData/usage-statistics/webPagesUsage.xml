@@ -6,18 +6,26 @@
     <usage userId="1" timestamp="1561800825806" />
   </page>
   <page path="/profile.html">
-    <usage userId="1" timestamp="1561801514911" />
+    <usage userId="1" timestamp="1561883026318" />
   </page>
   <page path="/queue.html">
     <usage userId="1" timestamp="1561800796062" />
   </page>
   <page path="/admin/admin.html">
-    <usage userId="1" timestamp="1561801488758" />
+    <usage userId="1" timestamp="1561866000766" />
+    <usage userId="-42" timestamp="1561882712043" />
   </page>
   <page path="/admin/createObjectFromUrl.html">
     <usage userId="1" timestamp="1561801482126" />
   </page>
   <page path="/">
-    <usage userId="1" timestamp="1561801518766" />
+    <usage userId="1" timestamp="1561867478438" />
+    <usage userId="-42" timestamp="1561882720294" />
+  </page>
+  <page path="/admin/editGroup.html">
+    <usage userId="1" timestamp="1561865998725" />
+  </page>
+  <page path="/overview.html">
+    <usage userId="-42" timestamp="1561882658006" />
   </page>
 </root>

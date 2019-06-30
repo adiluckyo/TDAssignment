@@ -3,3 +3,96 @@
 [2019-06-29 17:04:38,716]   INFO - r.maven.remote.MavenServerImpl - Successfully bound Maven Server to name: [teamcity-mavenServer] 
 [2019-06-29 17:04:38,791]   INFO - r.maven.remote.MavenServerImpl - using name of running JVM: [253@teamcity_server] 
 [2019-06-29 17:04:38,791]   INFO - r.maven.remote.MavenServerImpl - Printed following string to output: [253/59157] 
+[2019-06-30 03:09:39,706]   INFO - r.maven.remote.MavenServerImpl - Starting maven server with following arguments: [teamcity-mavenServer] 
+[2019-06-30 03:09:41,584]   INFO - r.maven.remote.MavenServerImpl - Successfully created registry using port [49953] 
+[2019-06-30 03:09:41,584]   INFO - r.maven.remote.MavenServerImpl - Successfully bound Maven Server to name: [teamcity-mavenServer] 
+[2019-06-30 03:09:41,585]   INFO - r.maven.remote.MavenServerImpl - using name of running JVM: [248@teamcity_server] 
+[2019-06-30 03:09:41,585]   INFO - r.maven.remote.MavenServerImpl - Printed following string to output: [248/49953] 
+[2019-06-30 03:35:13,654]   INFO - r.maven.remote.MavenServerImpl - Shutting down. Reason [MavenEmbedderFactory shutdown called in thread [TC: 03:35:10 Processing 98 listeners for serverShutdown; 03:35:10 Stage: TeamCity server is shutting down; TeamCity Server (version 2019.1.1 build 66192 started 2019-06-30 03:06:42.268), node id: MAIN_SERVER]] 
+[2019-06-30 03:35:13,654]   INFO - r.maven.remote.MavenServerImpl - Shutdown sequence complete 
+[2019-06-30 03:35:13,655]   INFO - r.maven.remote.MavenServerImpl - The JVM is shutting down. 
+[2019-06-30 03:35:51,247]   INFO - r.maven.remote.MavenServerImpl - Starting maven server with following arguments: [teamcity-mavenServer] 
+[2019-06-30 03:35:51,336]   INFO - r.maven.remote.MavenServerImpl - Successfully created registry using port [49607] 
+[2019-06-30 03:35:51,336]   INFO - r.maven.remote.MavenServerImpl - Successfully bound Maven Server to name: [teamcity-mavenServer] 
+[2019-06-30 03:35:51,338]   INFO - r.maven.remote.MavenServerImpl - using name of running JVM: [244@teamcity_server] 
+[2019-06-30 03:35:51,339]   INFO - r.maven.remote.MavenServerImpl - Printed following string to output: [244/49607] 
+[2019-06-30 04:03:32,710]   INFO - r.maven.remote.MavenServerImpl - Shutting down. Reason [MavenEmbedderFactory shutdown called in thread [TC: 04:03:30 Processing 98 listeners for serverShutdown; 04:03:30 Stage: TeamCity server is shutting down; TeamCity Server (version 2019.1.1 build 66192 started 2019-06-30 03:35:21.890), node id: MAIN_SERVER]] 
+[2019-06-30 04:03:32,710]   INFO - r.maven.remote.MavenServerImpl - Shutdown sequence complete 
+[2019-06-30 04:03:32,711]   INFO - r.maven.remote.MavenServerImpl - The JVM is shutting down. 
+[2019-06-30 04:04:18,624]   INFO - r.maven.remote.MavenServerImpl - Starting maven server with following arguments: [teamcity-mavenServer] 
+[2019-06-30 04:04:18,903]   INFO - r.maven.remote.MavenServerImpl - Successfully created registry using port [49623] 
+[2019-06-30 04:04:18,903]   INFO - r.maven.remote.MavenServerImpl - Successfully bound Maven Server to name: [teamcity-mavenServer] 
+[2019-06-30 04:04:18,908]   INFO - r.maven.remote.MavenServerImpl - using name of running JVM: [245@teamcity_server] 
+[2019-06-30 04:04:18,908]   INFO - r.maven.remote.MavenServerImpl - Printed following string to output: [245/49623] 
+[2019-06-30 04:11:33,213]   INFO - r.maven.remote.MavenServerImpl - Shutting down. Reason [MavenEmbedderFactory shutdown called in thread [TC: 04:11:31 Processing 98 listeners for serverShutdown; 04:11:31 Stage: TeamCity server is shutting down; TeamCity Server (version 2019.1.1 build 66192 started 2019-06-30 04:03:39.463), node id: MAIN_SERVER]] 
+[2019-06-30 04:11:33,213]   INFO - r.maven.remote.MavenServerImpl - Shutdown sequence complete 
+[2019-06-30 04:11:33,214]   INFO - r.maven.remote.MavenServerImpl - The JVM is shutting down. 
+[2019-06-30 04:12:19,391]   INFO - r.maven.remote.MavenServerImpl - Starting maven server with following arguments: [teamcity-mavenServer] 
+[2019-06-30 04:12:19,615]   INFO - r.maven.remote.MavenServerImpl - Successfully created registry using port [58156] 
+[2019-06-30 04:12:19,615]   INFO - r.maven.remote.MavenServerImpl - Successfully bound Maven Server to name: [teamcity-mavenServer] 
+[2019-06-30 04:12:19,620]   INFO - r.maven.remote.MavenServerImpl - using name of running JVM: [243@teamcity_server] 
+[2019-06-30 04:12:19,621]   INFO - r.maven.remote.MavenServerImpl - Printed following string to output: [243/58156] 
+[2019-06-30 04:16:09,568]   INFO - r.maven.remote.MavenServerImpl - Shutting down. Reason [MavenEmbedderFactory shutdown called in thread [TC: 04:16:07 Processing 98 listeners for serverShutdown; 04:16:07 Stage: TeamCity server is shutting down; TeamCity Server (version 2019.1.1 build 66192 started 2019-06-30 04:11:41.199), node id: MAIN_SERVER]] 
+[2019-06-30 04:16:09,568]   INFO - r.maven.remote.MavenServerImpl - Shutdown sequence complete 
+[2019-06-30 04:16:09,569]   INFO - r.maven.remote.MavenServerImpl - The JVM is shutting down. 
+[2019-06-30 04:16:58,478]   INFO - r.maven.remote.MavenServerImpl - Starting maven server with following arguments: [teamcity-mavenServer] 
+[2019-06-30 04:16:58,659]   INFO - r.maven.remote.MavenServerImpl - Successfully created registry using port [52511] 
+[2019-06-30 04:16:58,660]   INFO - r.maven.remote.MavenServerImpl - Successfully bound Maven Server to name: [teamcity-mavenServer] 
+[2019-06-30 04:16:58,662]   INFO - r.maven.remote.MavenServerImpl - using name of running JVM: [247@teamcity_server] 
+[2019-06-30 04:16:58,662]   INFO - r.maven.remote.MavenServerImpl - Printed following string to output: [247/52511] 
+[2019-06-30 04:20:34,953]   INFO - r.maven.remote.MavenServerImpl - Shutting down. Reason [MavenEmbedderFactory shutdown called in thread [TC: 04:20:33 Processing 98 listeners for serverShutdown; 04:20:33 Stage: TeamCity server is shutting down; TeamCity Server (version 2019.1.1 build 66192 started 2019-06-30 04:16:16.643), node id: MAIN_SERVER]] 
+[2019-06-30 04:20:34,954]   INFO - r.maven.remote.MavenServerImpl - Shutdown sequence complete 
+[2019-06-30 04:20:34,955]   INFO - r.maven.remote.MavenServerImpl - The JVM is shutting down. 
+[2019-06-30 04:21:18,303]   INFO - r.maven.remote.MavenServerImpl - Starting maven server with following arguments: [teamcity-mavenServer] 
+[2019-06-30 04:21:18,403]   INFO - r.maven.remote.MavenServerImpl - Successfully created registry using port [58306] 
+[2019-06-30 04:21:18,404]   INFO - r.maven.remote.MavenServerImpl - Successfully bound Maven Server to name: [teamcity-mavenServer] 
+[2019-06-30 04:21:18,405]   INFO - r.maven.remote.MavenServerImpl - using name of running JVM: [245@teamcity_server] 
+[2019-06-30 04:21:18,406]   INFO - r.maven.remote.MavenServerImpl - Printed following string to output: [245/58306] 
+[2019-06-30 04:24:43,937]   INFO - r.maven.remote.MavenServerImpl - Shutting down. Reason [MavenEmbedderFactory shutdown called in thread [TC: 04:24:42 Processing 98 listeners for serverShutdown; 04:24:42 Stage: TeamCity server is shutting down; TeamCity Server (version 2019.1.1 build 66192 started 2019-06-30 04:20:41.831), node id: MAIN_SERVER]] 
+[2019-06-30 04:24:43,937]   INFO - r.maven.remote.MavenServerImpl - Shutdown sequence complete 
+[2019-06-30 04:24:43,938]   INFO - r.maven.remote.MavenServerImpl - The JVM is shutting down. 
+[2019-06-30 04:25:23,789]   INFO - r.maven.remote.MavenServerImpl - Starting maven server with following arguments: [teamcity-mavenServer] 
+[2019-06-30 04:25:23,911]   INFO - r.maven.remote.MavenServerImpl - Successfully created registry using port [49797] 
+[2019-06-30 04:25:23,911]   INFO - r.maven.remote.MavenServerImpl - Successfully bound Maven Server to name: [teamcity-mavenServer] 
+[2019-06-30 04:25:23,912]   INFO - r.maven.remote.MavenServerImpl - using name of running JVM: [243@teamcity_server] 
+[2019-06-30 04:25:23,912]   INFO - r.maven.remote.MavenServerImpl - Printed following string to output: [243/49797] 
+[2019-06-30 04:39:48,223]   INFO - r.maven.remote.MavenServerImpl - Shutting down. Reason [MavenEmbedderFactory shutdown called in thread [TC: 04:39:46 Processing 98 listeners for serverShutdown; 04:39:46 Stage: TeamCity server is shutting down; TeamCity Server (version 2019.1.1 build 66192 started 2019-06-30 04:24:52.439), node id: MAIN_SERVER]] 
+[2019-06-30 04:39:48,224]   INFO - r.maven.remote.MavenServerImpl - Shutdown sequence complete 
+[2019-06-30 04:39:48,227]   INFO - r.maven.remote.MavenServerImpl - The JVM is shutting down. 
+[2019-06-30 04:40:24,908]   INFO - r.maven.remote.MavenServerImpl - Starting maven server with following arguments: [teamcity-mavenServer] 
+[2019-06-30 04:40:25,419]   INFO - r.maven.remote.MavenServerImpl - Successfully created registry using port [51544] 
+[2019-06-30 04:40:25,419]   INFO - r.maven.remote.MavenServerImpl - Successfully bound Maven Server to name: [teamcity-mavenServer] 
+[2019-06-30 04:40:25,428]   INFO - r.maven.remote.MavenServerImpl - using name of running JVM: [243@teamcity_server] 
+[2019-06-30 04:40:25,429]   INFO - r.maven.remote.MavenServerImpl - Printed following string to output: [243/51544] 
+[2019-06-30 04:44:59,038]   INFO - r.maven.remote.MavenServerImpl - Shutting down. Reason [MavenEmbedderFactory shutdown called in thread [TC: 04:44:57 Processing 98 listeners for serverShutdown; 04:44:57 Stage: TeamCity server is shutting down; TeamCity Server (version 2019.1.1 build 66192 started 2019-06-30 04:39:56.326), node id: MAIN_SERVER]] 
+[2019-06-30 04:44:59,039]   INFO - r.maven.remote.MavenServerImpl - Shutdown sequence complete 
+[2019-06-30 04:44:59,043]   INFO - r.maven.remote.MavenServerImpl - The JVM is shutting down. 
+[2019-06-30 04:45:39,314]   INFO - r.maven.remote.MavenServerImpl - Starting maven server with following arguments: [teamcity-mavenServer] 
+[2019-06-30 04:45:39,563]   INFO - r.maven.remote.MavenServerImpl - Successfully created registry using port [58686] 
+[2019-06-30 04:45:39,563]   INFO - r.maven.remote.MavenServerImpl - Successfully bound Maven Server to name: [teamcity-mavenServer] 
+[2019-06-30 04:45:39,565]   INFO - r.maven.remote.MavenServerImpl - using name of running JVM: [244@teamcity_server] 
+[2019-06-30 04:45:39,565]   INFO - r.maven.remote.MavenServerImpl - Printed following string to output: [244/58686] 
+[2019-06-30 07:31:52,582]   INFO - r.maven.remote.MavenServerImpl - Shutting down. Reason [MavenEmbedderFactory shutdown called in thread [TC: 07:31:48 Processing 98 listeners for serverShutdown; 07:31:48 Stage: TeamCity server is shutting down; TeamCity Server (version 2019.1.1 build 66192 started 2019-06-30 04:45:07.006), node id: MAIN_SERVER]] 
+[2019-06-30 07:31:52,594]   INFO - r.maven.remote.MavenServerImpl - Shutdown sequence complete 
+[2019-06-30 07:31:52,595]   INFO - r.maven.remote.MavenServerImpl - The JVM is shutting down. 
+[2019-06-30 08:16:22,572]   INFO - r.maven.remote.MavenServerImpl - Starting maven server with following arguments: [teamcity-mavenServer] 
+[2019-06-30 08:16:22,714]   INFO - r.maven.remote.MavenServerImpl - Successfully created registry using port [51833] 
+[2019-06-30 08:16:22,934]   INFO - r.maven.remote.MavenServerImpl - Successfully bound Maven Server to name: [teamcity-mavenServer] 
+[2019-06-30 08:16:22,936]   INFO - r.maven.remote.MavenServerImpl - using name of running JVM: [248@teamcity_server] 
+[2019-06-30 08:16:22,936]   INFO - r.maven.remote.MavenServerImpl - Printed following string to output: [248/51833] 
+[2019-06-30 08:20:12,254]   INFO - r.maven.remote.MavenServerImpl - Shutting down. Reason [MavenEmbedderFactory shutdown called in thread [TC: 08:20:08 Processing 98 listeners for serverShutdown; 08:20:07 Stage: TeamCity server is shutting down; TeamCity Server (version 2019.1.1 build 66192 started 2019-06-30 08:09:30.547), node id: MAIN_SERVER]] 
+[2019-06-30 08:20:12,286]   INFO - r.maven.remote.MavenServerImpl - Shutdown sequence complete 
+[2019-06-30 08:20:12,288]   INFO - r.maven.remote.MavenServerImpl - The JVM is shutting down. 
+[2019-06-30 08:20:51,253]   INFO - r.maven.remote.MavenServerImpl - Starting maven server with following arguments: [teamcity-mavenServer] 
+[2019-06-30 08:20:51,518]   INFO - r.maven.remote.MavenServerImpl - Successfully created registry using port [52846] 
+[2019-06-30 08:20:51,518]   INFO - r.maven.remote.MavenServerImpl - Successfully bound Maven Server to name: [teamcity-mavenServer] 
+[2019-06-30 08:20:51,521]   INFO - r.maven.remote.MavenServerImpl - using name of running JVM: [243@teamcity_server] 
+[2019-06-30 08:20:51,521]   INFO - r.maven.remote.MavenServerImpl - Printed following string to output: [243/52846] 
+[2019-06-30 08:27:49,424]   INFO - r.maven.remote.MavenServerImpl - Shutting down. Reason [MavenEmbedderFactory shutdown called in thread [TC: 08:27:47 Processing 98 listeners for serverShutdown; 08:27:47 Stage: TeamCity server is shutting down; TeamCity Server (version 2019.1.1 build 66192 started 2019-06-30 08:20:26.725), node id: MAIN_SERVER]] 
+[2019-06-30 08:27:49,425]   INFO - r.maven.remote.MavenServerImpl - Shutdown sequence complete 
+[2019-06-30 08:27:49,425]   INFO - r.maven.remote.MavenServerImpl - The JVM is shutting down. 
+[2019-06-30 08:57:55,457]   INFO - r.maven.remote.MavenServerImpl - Starting maven server with following arguments: [teamcity-mavenServer] 
+[2019-06-30 08:57:55,671]   INFO - r.maven.remote.MavenServerImpl - Successfully created registry using port [51264] 
+[2019-06-30 08:57:55,671]   INFO - r.maven.remote.MavenServerImpl - Successfully bound Maven Server to name: [teamcity-mavenServer] 
+[2019-06-30 08:57:55,673]   INFO - r.maven.remote.MavenServerImpl - using name of running JVM: [249@teamcity_server] 
+[2019-06-30 08:57:55,673]   INFO - r.maven.remote.MavenServerImpl - Printed following string to output: [249/51264] 

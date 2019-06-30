@@ -3,10 +3,8 @@
 
 <auth-config>
   <auth-modules>
-    <auth-module type="Default">
-      <property key="freeRegistrationAllowed">false</property>
-    </auth-module>
-    <auth-module type="Token-Auth" />
-    <auth-module type="HTTP-Basic"/>
+       <auth-module type="LDAP"/>
+       <auth-module type="HTTP-Basic"/>
+       <auth-module type="Token-Auth"/>
   </auth-modules>
 </auth-config>

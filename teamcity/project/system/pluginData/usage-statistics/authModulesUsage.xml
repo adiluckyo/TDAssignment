@@ -1,5 +1,8 @@
 <root>
+  <authModule name="LDAP">
+    <usage userId="1" timestamp="1561883026168" />
+  </authModule>
   <authModule name="Built-in">
-    <usage userId="1" timestamp="1561801477747" />
+    <usage userId="1" timestamp="1561865890861" />
   </authModule>
 </root>
