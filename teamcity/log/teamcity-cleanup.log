@@ -50,3 +50,7 @@
 [2019-06-30 08:58:09,157]   INFO -  jetbrains.buildServer.CLEANUP - Cleanup time has been set to 3:00 daily
 [2019-06-30 08:58:09,179]   INFO -  jetbrains.buildServer.CLEANUP - The next cleanup time is 2019-07-01 03:00:00.000
 [2019-06-30 08:58:09,179]   INFO -  jetbrains.buildServer.CLEANUP - Cleanup is enabled
+[2019-07-01 06:55:53,421]   INFO -  jetbrains.buildServer.CLEANUP - Max cleanup duration is set to 0 seconds
+[2019-07-01 06:55:53,454]   INFO -  jetbrains.buildServer.CLEANUP - Cleanup time has been set to 3:00 daily
+[2019-07-01 06:55:53,478]   INFO -  jetbrains.buildServer.CLEANUP - The next cleanup time is 2019-07-02 03:00:00.000
+[2019-07-01 06:55:53,478]   INFO -  jetbrains.buildServer.CLEANUP - Cleanup is enabled

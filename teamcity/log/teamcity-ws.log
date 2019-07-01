@@ -13,3 +13,5 @@
 [2019-06-30 08:18:43,965]   WARN [nio-8111-exec-3] - etbrains.buildServer.WEBSOCKET - Closing session 2: User logs out
 [2019-06-30 08:20:31,668]   INFO [id: MAIN_SERVER] - etbrains.buildServer.WEBSOCKET - WebSocket feature is supported for Apache Tomcat/8.5.40
 [2019-06-30 08:57:24,934]   INFO [id: MAIN_SERVER] - etbrains.buildServer.WEBSOCKET - WebSocket feature is supported for Apache Tomcat/8.5.40
+[2019-07-01 06:54:06,785]   INFO [id: MAIN_SERVER] - etbrains.buildServer.WEBSOCKET - WebSocket feature is supported for Apache Tomcat/8.5.40
+[2019-07-01 06:59:24,145]   WARN [nio-8111-exec-2] - etbrains.buildServer.WEBSOCKET - Closing session 0: User logs out

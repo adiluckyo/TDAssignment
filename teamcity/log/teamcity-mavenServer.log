@@ -96,3 +96,8 @@
 [2019-06-30 08:57:55,671]   INFO - r.maven.remote.MavenServerImpl - Successfully bound Maven Server to name: [teamcity-mavenServer] 
 [2019-06-30 08:57:55,673]   INFO - r.maven.remote.MavenServerImpl - using name of running JVM: [249@teamcity_server] 
 [2019-06-30 08:57:55,673]   INFO - r.maven.remote.MavenServerImpl - Printed following string to output: [249/51264] 
+[2019-07-01 06:55:04,607]   INFO - r.maven.remote.MavenServerImpl - Starting maven server with following arguments: [teamcity-mavenServer] 
+[2019-07-01 06:55:07,344]   INFO - r.maven.remote.MavenServerImpl - Successfully created registry using port [50693] 
+[2019-07-01 06:55:07,345]   INFO - r.maven.remote.MavenServerImpl - Successfully bound Maven Server to name: [teamcity-mavenServer] 
+[2019-07-01 06:55:07,735]   INFO - r.maven.remote.MavenServerImpl - using name of running JVM: [226@teamcity_server] 
+[2019-07-01 06:55:07,735]   INFO - r.maven.remote.MavenServerImpl - Printed following string to output: [226/50693] 
