@@ -20,3 +20,61 @@
 [2019-06-30 08:20:12,242]   INFO - s.java.TfsJavaRunnerTerminator - Terminating TFS java sessions
 [2019-06-30 08:27:49,403]   INFO - vcs.tfs.pool.TfsPoolTerminator - Terminating TFS .net sessions
 [2019-06-30 08:27:49,404]   INFO - s.java.TfsJavaRunnerTerminator - Terminating TFS java sessions
+[2019-07-01 13:18:22,899]   INFO - .vcs.tfs.java.TfsJavaWebRunner - Starting TFS out of process application
+[2019-07-01 13:18:22,904]   INFO - .vcs.tfs.java.TfsJavaWebRunner - TFS out of process application has been started
+[2019-07-01 13:18:24,008]   INFO - gers.vcs.tfs.TfsTimeoutWatcher - TFS out of process app idle timer has started
+[2019-07-01 13:18:24,011]   INFO - .vcs.tfs.java.TfsJavaWebRunner - Web server started at http://localhost:35807/api/commands
+[2019-07-01 13:18:24,738]   INFO - .vcs.tfs.java.TfsJavaWebRunner - INFO - lient.DefaultHTTPClientFactory - HttpClient configured for http://gitlab_service/root/, authenticating as devops
+[2019-07-01 13:18:25,028]   INFO - .vcs.tfs.java.TfsJavaWebRunner - WARN - .core.TFSTeamProjectCollection - Error getting data provider
+[2019-07-01 13:18:25,028]   INFO - .vcs.tfs.java.TfsJavaWebRunner - com.microsoft.tfs.core.exceptions.TECoreException: The SOAP endpoint http://gitlab_service/root/Services/v1.0/Registration.asmx could not be contacted.  HTTP status: 404
+[2019-07-01 13:18:25,028]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.microsoft.tfs.core.exceptions.mappers.TECoreExceptionMapper.map(TECoreExceptionMapper.java:97)
+[2019-07-01 13:18:25,028]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.microsoft.tfs.core.exceptions.mappers.RegistrationExceptionMapper.map(RegistrationExceptionMapper.java:18)
+[2019-07-01 13:18:25,028]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.microsoft.tfs.core.clients.registration.RegistrationData.newFromServer(RegistrationData.java:61)
+[2019-07-01 13:18:25,028]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.microsoft.tfs.core.clients.registration.RegistrationClient.getRegistrationData(RegistrationClient.java:617)
+[2019-07-01 13:18:25,028]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.microsoft.tfs.core.clients.registration.RegistrationClient.getRegistrationEntries(RegistrationClient.java:144)
+[2019-07-01 13:18:25,028]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.microsoft.tfs.core.clients.registration.RegistrationClient.getRegistrationEntries(RegistrationClient.java:129)
+[2019-07-01 13:18:25,028]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.microsoft.tfs.core.PreFrameworkServerDataProvider.findServiceLocation(PreFrameworkServerDataProvider.java:275)
+[2019-07-01 13:18:25,028]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.microsoft.tfs.core.PreFrameworkServerDataProvider.locationForCurrentConnection(PreFrameworkServerDataProvider.java:251)
+[2019-07-01 13:18:25,028]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.microsoft.tfs.core.TFSTeamProjectCollection.getServerDataProvider(TFSTeamProjectCollection.java:172)
+[2019-07-01 13:18:25,028]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.microsoft.tfs.core.TFSConnection.getWebService(TFSConnection.java:903)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.microsoft.tfs.core.config.client.DefaultClientFactory$7.newClient(DefaultClientFactory.java:208)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.microsoft.tfs.core.config.client.DefaultClientFactory.newClient(DefaultClientFactory.java:86)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.microsoft.tfs.core.TFSConnection.getClient(TFSConnection.java:1490)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.microsoft.tfs.core.TFSTeamProjectCollection.getVersionControlClient(TFSTeamProjectCollection.java:376)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at jetbrains.buildServer.buildTriggers.vcs.tfs.commands.TfsXplatContextCommandBase.execute(TfsXplatContextCommandBase.java:17)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at jetbrains.buildServer.buildTriggers.vcs.tfs.commands.TfsXplatCollectionCommandBase.execute(TfsXplatCollectionCommandBase.java:46)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at jetbrains.buildServer.buildTriggers.vcs.tfs.TfsXplatCommandProcessor.processArguments(TfsXplatCommandProcessor.java:72)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at jetbrains.buildServer.buildTriggers.vcs.tfs.controllers.TfsXplatCommandsController.getCommandResponse(TfsXplatCommandsController.java:21)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at java.lang.reflect.Method.invoke(Method.java:498)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:205)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1542)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1473)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1419)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1409)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.sun.jersey.server.impl.container.httpserver.HttpHandlerContainer.handle(HttpHandlerContainer.java:191)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at java.lang.Thread.run(Thread.java:748)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - Caused by: com.microsoft.tfs.core.ws.runtime.exceptions.EndpointNotFoundException: The SOAP endpoint http://gitlab_service/root/Services/v1.0/Registration.asmx could not be contacted.  HTTP status: 404
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.microsoft.tfs.core.ws.runtime.client.SOAPService.executeSOAPRequestInternal(SOAPService.java:671)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.microsoft.tfs.core.ws.runtime.client.SOAPService.executeSOAPRequest(SOAPService.java:444)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at ms.tfs.services.registration._03._RegistrationSoap12Service.getRegistrationEntries(_RegistrationSoap12Service.java:106)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - at com.microsoft.tfs.core.clients.registration.RegistrationData.newFromServer(RegistrationData.java:58)
+[2019-07-01 13:18:25,029]   INFO - .vcs.tfs.java.TfsJavaWebRunner - ... 40 more
+[2019-07-01 13:18:25,044]   INFO - s.tfs.TfsTestConnectionSupport - Failed to test connection to the repository TfsRoot{tfs: http://gitlab_service/root/ $/test.git, user: devops}: jetbrains.buildServer.vcs.VcsException: Unable to connect to TFS server: The SOAP endpoint http://gitlab_service/root/Services/v1.0/Registration.asmx could not be contacted.  HTTP status: 404 (enable debug to see stacktrace)
+[2019-07-01 13:18:25,045]   WARN - Triggers.vcs.tfs.TfsUrlSupport - Failed to connect to TFS server: jetbrains.buildServer.vcs.VcsException: Unable to connect to TFS server: The SOAP endpoint http://gitlab_service/root/Services/v1.0/Registration.asmx could not be contacted.  HTTP status: 404 (enable debug to see stacktrace)
